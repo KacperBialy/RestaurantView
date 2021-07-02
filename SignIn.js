@@ -1,4 +1,4 @@
-function GetSingInValue()
+function GetSingInValues()
 {
 const formData = document.querySelectorAll("#form input");
 const email = formData[0].value;
