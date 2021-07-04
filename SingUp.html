@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant View</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="text-center mt-5">
-        <form id="form" onsubmit="GetSingUpValues()" style="max-width: 300px;margin: auto;">
-            <img src="Images/logo.png" >
-            <h3 class="my-4">Please sign up</h3>
-            <input type="email" id="emailAdress" class="form-control mb-1" placeholder="Email Adress" required autofocus>
-            <input type="password" id="password" class="form-control mb-1" placeholder="Password" required>
-            <input type="password" id="confimPassword" class="form-control mb-1" placeholder="Confirm password" required>
-            <input type="text" id="nationality" class="form-control mb-1" placeholder="Nationality" required autofocus>
-            <input type="date" id="dateOfBirth" class="form-control mb-1" placeholder="Date of birth" required autofocus>
-            <div class="input-group mb-3">
-                <select class="form-control form-select" id="accountType">
-                  <option value="1">User</option>
-                  <option value="2">Manager</option>
-                  <option value="3">Admin</option>
-                </select>
-                <label class="input-group-text" for="accountType">Account type</label>
-              </div>
-            <div class="mt-2 d-grid">
-                <button type="submit" class=" btn-block btn-lg btn-success">Sign In</button>
-            </div>
-        </form>
+      <form
+        id="form"
+        onsubmit="GetSingUpValues()"
+        style="max-width: 300px; margin: auto"
+      >
+        <img src="Images/logo.png" />
+        <h3 class="my-4">Please sign up</h3>
+        <input
+          type="email"
+          id="emailAdress"
+          class="form-control mb-1"
+          placeholder="Email Adress"
+          required
+          autofocus
+        />
+        <input
+          type="password"
+          id="password"
+          class="form-control mb-1"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          id="confimPassword"
+          class="form-control mb-1"
+          placeholder="Confirm password"
+          required
+        />
+        <input
+          type="text"
+          id="nationality"
+          class="form-control mb-1"
+          placeholder="Nationality"
+          required
+          autofocus
+        />
+        <input
+          type="date"
+          id="dateOfBirth"
+          class="form-control mb-1"
+          placeholder="Date of birth"
+          required
+          autofocus
+        />
+        <div class="input-group mb-3">
+          <select class="form-control form-select" id="accountType">
+            <option value="1">User</option>
+            <option value="2">Manager</option>
+            <option value="3">Admin</option>
+          </select>
+          <label class="input-group-text" for="accountType">Account type</label>
+        </div>
+        <div class="mt-2 d-grid">
+          <button type="submit" class="btn-block btn-lg btn-success">
+            Sign Up
+          </button>
+        </div>
+      </form>
     </div>
 
     <script src="SingUp.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
-</body>
+  </body>
 </html>

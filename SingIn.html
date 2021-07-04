@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant View</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="text-center mt-5">
-        <form id="form" onsubmit="GetSingInValues()" style="max-width: 300px;margin: auto;">
-            <img src="Images/logo.png" >
-            <h3 class="my-4">Please sign in</h3>
-            <input type="email" id="emailAdress" class="form-control mb-1" placeholder="Email Adress" required autofocus>
-            <input type="password" id="password" class="form-control" placeholder="Password" required>
-            <div class="mt-2 d-grid">
-                <button type="submit" class=" btn-block btn-lg btn-primary">Sign In</button>
-            </div>
-        </form>
-        <div class="mt-2 d-grid" style="max-width: 300px;margin: auto;">
-            <button class="btn-block btn-lg btn-warning">Sign Up</button>
+      <form
+        id="form"
+        onsubmit="return GetSingInValues()"
+        style="max-width: 300px; margin: auto"
+      >
+        <img src="Images/logo.png" />
+        <h3 class="my-4">Please sign in</h3>
+        <input
+          type="email"
+          id="emailAdress"
+          class="form-control mb-1"
+          placeholder="Email Adress"
+          required
+          autofocus
+        />
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <div class="mt-2 d-grid">
+          <button type="submit" class="btn-block btn-lg btn-primary">
+            Sign In
+          </button>
         </div>
+      </form>
+      <div class="mt-2" style="max-width: 300px; margin: auto">
+        <a
+          id="linkSingUp"
+          class="d-grid"
+          style="text-decoration: none"
+          hidden
+          href="#"
+        >
+          <button onclick="SingUpClick()" class="btn-block btn-lg btn-warning">
+            Sign Up
+          </button>
+        </a>
+      </div>
     </div>
+    <script src="config.js"></script>
     <script src="SignIn.js"></script>
+    <script src="http.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
-</body>
-
+  </body>
 </html>
